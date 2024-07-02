@@ -1,7 +1,7 @@
 #ifndef MYPUSHBUTTON_H
 #define MYPUSHBUTTON_H
 
-#include <QObject>
+#include<QObject>
 #include<QPushButton>
 #include<QString>
 #include<QPropertyAnimation>

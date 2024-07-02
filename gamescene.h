@@ -45,10 +45,10 @@ public:
     Fire *fire;
     Castle *castle;
 
-    void paintEvent(QPaintEvent *);//绘图事件
-    void keyPressEvent(QKeyEvent *event);//键盘按下
-    void keyReleaseEvent(QKeyEvent *event);//键盘抬起
-    void timerEvent(QTimerEvent *event);//定时器
+    void paintEvent(QPaintEvent *);
+    void keyPressEvent(QKeyEvent *event);
+    void keyReleaseEvent(QKeyEvent *event);
+    void timerEvent(QTimerEvent *event);
     void Game_Init();
 
     void Die_Init();
@@ -59,8 +59,8 @@ public:
 
     void Fall_Down(int &y);
 
-    void Jump_Collision();//角色跳跃碰撞检测
-    void Move_Collision();//移动碰撞检测
+    void Jump_Collision();
+    void Move_Collision();
     void Game_Win();
 
     signals:
