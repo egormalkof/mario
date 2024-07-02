@@ -5,9 +5,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setFixedSize(800,545);
-    this->setWindowTitle("Mariol");
+    this->setWindowTitle("Mario");
     QApplication::setWindowIcon(QIcon(":/photo/icon.png"));
-    MyPushButton *start_btn=new MyPushButton(":/photo/end.png");
+    MyPushButton *start_btn=new MyPushButton(":/photo/start.png");
     start_btn->setParent(this);
     start_btn->move(30,this->height()*0.25);
     connect(start_btn, &QPushButton::clicked, [=]() {
@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
             });
         });
     });
-    MyPushButton *end_btn=new MyPushButton(":/photo/start.png");
+    MyPushButton *end_btn=new MyPushButton(":/photo/end.png");
     end_btn->setParent(this);
     end_btn->move(30,this->height()*0.55);
     connect(end_btn,&QPushButton::clicked,[=](){
